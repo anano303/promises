@@ -20,9 +20,8 @@ async function getAllProducts() {
 
 async function getFilteredProducts(filter) {
   if (!filter) {
-    // Check if filter is not provided
     filter = prompt("Enter user ID to filter products:");
-    if (filter === null) return; // Exit function if user cancels prompt
+    if (filter === null) return;
   }
 
   try {
